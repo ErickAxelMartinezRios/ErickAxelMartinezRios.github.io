@@ -62,6 +62,44 @@
         min-height: auto;
       }
     }
+        /* Video thumbnail styles */
+    .video-thumbnail {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    .video-thumbnail img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.6;
+    }
+    .play-icon {
+      position: relative;
+      font-size: 48px;
+      z-index: 1;
+    }
+    .video-title {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
@@ -78,27 +116,23 @@
       <a href="https://www.researchgate.net/profile/Erick-Martinez-Rios-2">📚 ResearchGate</a>
       <a href="https://www.youtube.com/@erickmartinez2611/playlists">▶️ YouTube</a>
 
-        <!-- First YouTube video -->
-        <!-- First YouTube video -->
-      <div style="margin-top: 15px;">
-        <iframe width="100%" height="180" 
-          src="https://www.youtube.com/embed/R7EXsMC061g?start=7" 
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
+      <!-- First Video Thumbnail -->
+      <a href="https://www.youtube.com/watch?v=R7EXsMC061g&t=7s" target="_blank">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/R7EXsMC061g/hqdefault.jpg" alt="Masters degree graduation video">
+          <div class="play-icon">▶</div>
+          <div class="video-title">Masters degree graduation video</div>
+        </div>
+      </a>
 
-    
-      <!-- Second YouTube video -->
-      <div style="margin-top: 10px;">
-        <iframe width="100%" height="180" 
-          src="https://www.youtube.com/embed/2DAqPqBr3ck" 
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
+      <!-- Second Video Thumbnail -->
+      <a href="https://www.youtube.com/watch?v=2DAqPqBr3ck" target="_blank">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/2DAqPqBr3ck/hqdefault.jpg" alt="Wheelchair in China video">
+          <div class="play-icon">▶</div>
+          <div class="video-title">Wheelchair in China video</div>
+        </div>
+      </a>
     </aside>
 
     <main>
